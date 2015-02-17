@@ -1,0 +1,29 @@
+{
+  "name": "ot-node-env",
+  "version": "1.0.0",
+  "description": "ot-specific hierarchy for setting the NODE_ENV",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/opentable/ot-node-env.git"
+  },
+  "keywords": [
+    "node-env"
+  ],
+  "author": "Andy Royle <ajroyle@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/ot-node-env/issues"
+  },
+  "homepage": "https://github.com/opentable/ot-node-env",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-cli": "^0.1.13",
+    "grunt-mocha-test": "^0.10.0",
+    "should": "^3.2.0",
+    "grunt-contrib-jshint": "^0.9.2"
+  }
+}
