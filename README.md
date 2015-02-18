@@ -9,7 +9,7 @@ Hierarchy as follows:
 
 - NODE_ENV
 - /etc/node_env.json ( file with the following contents `{ "env": "myenv" }`)
-- "default"
+- specified fallback (e.g. local or dev)
 
 Motivation: Some of the wrappers and up-scripts we are using are a PITA to thread environment variables through.
 
@@ -28,6 +28,11 @@ console.log(process.env.NODE_ENV);
 // or alternatively
 
 require('ot-node-env').env('/path/to/file.json')
+
+// or
+
+require('ot-node-env').env('/path/to/file.json', 'dev');
+
 ```
 
 __Running tests__

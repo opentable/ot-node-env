@@ -1,4 +1,4 @@
-module.exports.env = function(file){
+module.exports.env = function(file, fallback){
   var targetfile = file || '/etc/node_env.json';
 
   var filecontents;
@@ -10,5 +10,5 @@ module.exports.env = function(file){
     filecontents = {};
   }
 
-  process.env.NODE_ENV = process.env.NODE_ENV || filecontents.env || "default";
+  process.env.NODE_ENV = process.env.NODE_ENV || filecontents.env || fallback || "";
 };
